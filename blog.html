@@ -2,62 +2,70 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-    <script src="https://kit.fontawesome.com/d71311d53e.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        .font-lexend {
-            font-family: "Lexend", sans-serif;
-        }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'btn-color': '#B4F461',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <script src="https://kit.fontawesome.com/d71311d53e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .font-lexend {
+      font-family: "Lexend", sans-serif;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-color': '#B4F461',
+            "nav-background": "rgba(249, 247, 243, 1)"
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
 <body class="font-lexend font-black">
-    <header>
-        <nav class="mx-28">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <a id="btn-home" class="btn bg-btn-color font-semibold text-xl">Home</a>
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="navbar-center">
-                    <img src="assets/logo.png" alt="">
-                  <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
-                </div>
-                <div class="navbar-end">
-                    <div><img src="assets/coin.png" alt=""></div>
-                    <div class="font-medium text-xl ml-1">
-                        <p>5500 BDT</p>
-                    </div>
-                  
-                </div>
+  <header>
+    <nav class="bg-nav-background py-5">
+      <div class="mx-28 my-2">
+        <div class="navbar bg-nav-background">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <a id="btn-home" class="btn bg-btn-color font-semibold text-xl">Home</a>
               </div>
-        </nav>
-    </header>
-    <script src="js/home.js"></script>
-    <script src="js/blog.js"></script>
+
+            </div>
+          </div>
+          <div class="navbar-center">
+            <img src="assets/logo.png" alt="">
+            <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <div><img src="assets/coin.png" alt=""></div>
+            <div class="font-medium text-xl ml-1">
+              <p>5500 BDT</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </nav>
+    <div class="text-center my-14">
+      <button class="btn mr-3 px-9">Normal</button>
+      <button class="btn px-9">Normal</button>
+    </div>
+  </header>
+  <script src="js/home.js"></script>
+  <script src="js/blog.js"></script>
 </body>
 
 </html>
