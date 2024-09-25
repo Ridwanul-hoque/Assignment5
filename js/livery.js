@@ -6,8 +6,11 @@ function getDonateValueById(id){
 }
 function ValueContainBDT(id){
     const extractNumber = document.getElementById(id).innerText
+    console.log(extractNumber)
     const currentValue = parseFloat(extractNumber.replace(' BDT',''))
+    console.log(currentValue)
     const newNumber =parseFloat(currentValue)
+    console.log(newNumber)
     return newNumber 
 
 }
